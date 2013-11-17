@@ -32,6 +32,17 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# make a form 
+gem 'simple_form'
+
+group :test, :development do 
+
+	end
+
+	group :production do
+		
+	end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

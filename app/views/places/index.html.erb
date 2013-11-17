@@ -8,8 +8,41 @@
 	<br/>
 
 	Address: <%= @place.address  %>
+
+	<!--copied from source view-source:https://google-developers.appspot.com/maps/documentation/javascript/v2/examples/map-markers
+ORIGINAL PAGE https://google-developers.appspot.com/maps/documentation/javascript/v2/examples/map-markers-->
+
+	    <script src="//maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyDzleZt1Cn-Ha1cn19cC8LOKVFueX_iYB4"
+            type="text/javascript"></script>
+
+    <script type="text/javascript">
+    
+      //when the page unloads do this
+     $(function(){
+
+      	//when the page unloads do this
+      	when the page loads
+		$( window ).unload(function(){
+			  GUnload();
+		});
+
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map_canvas"));
+        map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+
+         var point = new GLatLng(37.4419, -122.1419);
+      map.addOverlay(new GMarker(point));
+
+      }
+  	});
+
+    </script>
+
+
+     <div id="map_canvas" style="width: 500px; height: 300px"></div>
+
 	<% else %>
 		<h2> Enter a place, buddy </h2>
 	<% end %>
-	
+
 </div>

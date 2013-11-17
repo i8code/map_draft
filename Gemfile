@@ -35,12 +35,15 @@ end
 # make a form 
 gem 'simple_form'
 
+#install geokit gem 
+gem 'geokit'
+
 group :test, :development do 
 
 	end
 
 	group :production do
-		
+
 	end
 
 # Use ActiveModel has_secure_password

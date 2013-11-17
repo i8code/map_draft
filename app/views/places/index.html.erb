@@ -1,0 +1,14 @@
+<h1> Latest Place </h1>
+
+<div>
+
+	<% if @place.present? %>
+	Title: <%= @place.title  %>
+
+	<br/>
+
+	Address: <%= @place.address  %>
+	<% else %>
+	<h2> Enter a place, buddy </h2>
+	<% end %>
+</div>
